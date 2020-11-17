@@ -6,6 +6,8 @@
         <title>Trade360</title>
         <link rel = "stylesheet" href = "css/style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
          <!-- BEGIN intgrtn -->
          <script type="text/javascript">
@@ -96,11 +98,11 @@
                                 <img src = "images/Macbook Pro Flying.png" class = "mac-book-image">
                             </div>
                             <div class = "logos">
-                                <img src = "images/Amazon logo card 1.png">
-                                <img src = "images/Tesla logo card 1.png">
-                                <img src = "images/McDonalds logo card 1.png">
-                                <img src = "images/Microsoft logo card 1.png">
-                                <img src = "images/Google logo card 1.png">
+                                <img src = "images/Amazon logo card 1.png" data-aos="fade-left" data-aos-delay="100">
+                                <img src = "images/Tesla logo card 1.png" data-aos="fade-left" data-aos-delay="300">
+                                <img src = "images/McDonalds logo card 1.png" data-aos="fade-left" data-aos-delay="400">
+                                <img src = "images/Microsoft logo card 1.png" data-aos="fade-left" data-aos-delay="500">
+                                <img src = "images/Google logo card 1.png" data-aos="fade-left" data-aos-delay="600">
                             </div>
                         </div>
                     </div>
@@ -117,8 +119,9 @@
                             <hr noshade class = "line">
                             <div class = "items-row">
                                 <div class = "item-container">
-                                    <div class = "round"></div>
-                                    <div class = "item">
+                                    <!-- <div class = "round"></div> -->
+                                    <p class = "item-header">Step #1</p>
+                                    <div class = "item" data-aos="fade-left" data-aos-delay="100">
                                         <h3 class = "header">Register</h3>
                                         <p class = "content">
                                             Register for a free account in less than 30 seconds.
@@ -126,8 +129,9 @@
                                     </div>
                                 </div>
                                 <div class = "item-container">
-                                    <div class = "round"></div>
-                                    <div class = "item">
+                                    <!-- <div class = "round"></div> -->
+                                    <p class = "item-header">Step #2</p>
+                                    <div class = "item" data-aos="fade-left" data-aos-delay="200">
                                         <h3 class = "header">Fund</h3>
                                         <p class = "content">
                                             Connect your bank and fund your account to begin trading.
@@ -135,8 +139,9 @@
                                     </div>
                                 </div>
                                 <div class = "item-container">
-                                    <div class = "round"></div>
-                                    <div class = "item">
+                                    <!-- <div class = "round"></div> -->
+                                    <p class = "item-header">Step #3</p>
+                                    <div class = "item" data-aos="fade-left" data-aos-delay="300">
                                         <h3 class = "header">Trade</h3>
                                         <p class = "content">
                                             Start trading and earn more with live signals and market events.
@@ -196,7 +201,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class = "gradient"></div>
+                            <!-- <div class = "gradient"></div> -->
                             <a href = "#form" id = "register-link2" class = "scroll-to-form-link adaptive-link">Open Account</a>
                        </div>
                    </div>
@@ -219,6 +224,9 @@
                 <p class = "rights">© 2020 All Rights Reserved - Stock Trading</p>
             </footer>
         </div>
+        <script>
+            AOS.init();
+        </script>
         <script>
             let showMenu = () => {
                 document.getElementById( "menu-container" ).classList.remove("hidden");

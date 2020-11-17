@@ -600,7 +600,7 @@ input::-webkit-input-placeholder {
 .steps .container .steps-items .items-row {
     display: flex;
     justify-content: center;
-    margin-top: -25px;
+    margin-top: -32px;
 }
 
 .steps .container .steps-items .line {
@@ -626,7 +626,19 @@ input::-webkit-input-placeholder {
     height: 30px;
     border-radius: 100px;
     background-color: rgba(244, 117, 33, 1);
-    margin: 0 0 75px 0
+    margin: 0 0 75px 0;
+}
+
+.steps .container .steps-items .item-container .item-header {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 75px 0;
+    background-color: #F4F4F4;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+    color: #F47521;
 }
 
 .steps .container .steps-items .item-container .item {
@@ -658,7 +670,6 @@ input::-webkit-input-placeholder {
 }
 
 .trade-hottest {
-    height: 838px;
     justify-content: center;
 }
 
@@ -687,7 +698,6 @@ input::-webkit-input-placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -70px;
     margin-left: 30px;
 }
 
@@ -721,8 +731,7 @@ input::-webkit-input-placeholder {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 790px;
-    height: 400px;
-    overflow-y: auto;
+    height: auto;
     z-index: 1;
 }
 
@@ -753,6 +762,7 @@ input::-webkit-input-placeholder {
 .trade-hottest .container .cards .scroll-to-form-link {
     margin-top: 50px;
     align-self: flex-start;
+    margin-bottom: 50px;
 }
 
 .faq .container {
@@ -2026,6 +2036,7 @@ details[open] summary .round-button {
     .steps .container .steps-items .line {
         width: 3px;
         height: 100%;
+        display: none;
     }
 
     .steps .container .steps-items .items-row {
@@ -2049,6 +2060,10 @@ details[open] summary .round-button {
 
     .steps .container .steps-items .item-container .round {
         margin: 0 80px 0 0;
+    }
+
+    .steps .container .steps-items .item-container .item-header {
+        margin: 0;
     }
 
     .steps .container .steps-items .items-row .item-container .item {
@@ -2099,12 +2114,11 @@ details[open] summary .round-button {
     }
 
     .trade-hottest .container .cards {
-        margin-bottom: 200px;
+        margin-bottom: 50px;
     }
 
     .trade-hottest .container .cards .scrollable-container {
         width: 667px;
-        height: 492px;
     }
 
     .trade-hottest .container .cards .scrollable-container .item {
@@ -2209,13 +2223,19 @@ details[open] summary .round-button {
 
 @media ( max-device-width: 1024px ) {
     body {
-        width: 1323px;
+        width: 1589px;
+    }
+}
+
+@media ( max-device-width: 1000px ) {
+    body {
+        width: 1791px;
     }
 }
 
 @media ( max-device-width: 880px ) {
     body {
-        width: 872px;
+        width: 997px;
     }
 
     .about .container {
@@ -2235,7 +2255,7 @@ details[open] summary .round-button {
 
 @media ( max-device-width: 700px ) {
     body {
-        width: 850px;
+        width: 911px;
     }
 }
 
@@ -2957,12 +2977,12 @@ details[open] summary .round-button {
 
     .trade-hottest .container .cards {
         width: 100%;
+        margin-bottom: 150px;
         margin-left: 0;
     }
 
     .trade-hottest .container .cards .scrollable-container {
         width: 100%;
-        height: 908px;
     }
 
     .trade-hottest .container .cards .scrollable-container .item {
