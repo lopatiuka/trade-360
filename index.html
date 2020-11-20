@@ -38,19 +38,20 @@
                     <div class = "container">
                         <div class = "content">  
                             <div class = "video-container">
-                                <div class = "video-header">
+                                <div class = "video-header" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
                                     <h1>Register Today with our most Recommended Broker Trade 360!</h1>
                                 </div>  
-                                <p class="video-caption">
+                                <p class="video-caption" data-aos="fade-down" data-aos-duration="1000">
                                     Trade nearly 600 CFDs in all asset classes from your mobile or desktop
                                 </p>
-                                <div class = "video">
+                                <div class = "video" data-aos="fade-right" data-aos-duration="1500">
                                     <iframe id = "iframe-video" width="100%" height="100%" src="https://www.youtube.com/embed/75AD9xu7BzA??rel=0&amp;vq=hd1080"
                                      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                                     </iframe>
                                 </div>
                             </div>
-                            <div id = "form" class = "form-container">
+                            <div id = "form" class = "form-container" data-aos="fade-left" data-aos-duration="1500">
+                                <img src = "images/Trade 360 Logo header.png">
                                 <h2 class = "form-header">Join our Community Today!</h2>
                                 <h3>STEP 1</h3>
                                 <form>
@@ -183,7 +184,7 @@
                                 </div>
                                 <div class = "item">
                                     <h3 class = "header">Best Execution</h3>
-                                    <p class = "content">Trade360 is a straight-throug processing broker, offering immediate execution
+                                    <p class = "content">Trade360 is a straight-through processing broker, offering immediate execution
                                         and excellent fixed spreads on all CFDs
                                     </p>
                                 </div>
@@ -240,18 +241,13 @@
             document.getElementById( "hide-menu" ).addEventListener( "click", hideMenu );
         </script>
         <script>
-            $("#register-link").click(function() { 
-                $('html, body').animate({
-                    scrollTop: $("#form").offset().top
-                }, 1000); 
-            });
-        </script>
-        <script>
-            $("#register-link2").click(function() { 
-                $('html, body').animate({
-                    scrollTop: $("#form").offset().top
-                }, 1000); 
-            });
+            $(".scroll-to-form-link").each( function(){
+                $(this).click(function() { 
+                    $('html, body').animate({
+                        scrollTop: $("#form").offset().top
+                    }, 1000); 
+                })
+            })
         </script>
         <script>
             $(function () {

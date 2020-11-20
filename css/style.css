@@ -186,7 +186,6 @@ main {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 115px;
     background-image: url("../images/Home\ bg\ element.png");
     background-repeat: no-repeat;
     background-size: auto;
@@ -250,7 +249,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     width: 380px;
-    height: 709px;
+    height: auto;
     margin-top: 50px;
     margin-left: 20px;
     box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.6), 9px 9px 16px rgba(179, 179, 179, 0.25);
@@ -259,9 +258,7 @@ main {
 }
 
 .intro .container .content .form-container img {
-    margin-top: 50px;
-    width: 166.99px;
-    height: 100px;    
+    margin-top: 50px; 
 }
 
 .intro .container .content .form-container h2 {
@@ -335,6 +332,7 @@ input::-webkit-input-placeholder {
     border-radius: 50px;
     font-weight: 600;
     font-size: 16px;
+    margin-bottom: 30px;
     color: white;
     box-shadow: inset 4px 4px 10px rgba(33, 33, 33, 0.15);
     transition-property: box-shadow;
